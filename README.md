@@ -8,7 +8,7 @@
 (Abstract here - basically your pitch with some modification - but short overview)
 (TEASER IMAGE HERE - should wow me to read your work)
 
-
+![Berlin Map](images/Berlin_road_map.png) 
 
 (directions, - remove)
 * (this Readme should "evolve" over time as you add and edit it)
