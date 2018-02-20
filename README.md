@@ -5,20 +5,19 @@
 > * Group participants names: Brian Varns, Gabrielle Vasquez, Matthias Weber
 > * Project Title: City-Traffic-Planning
 
+Our project is dealing with the issue of city-planning and in special measures that can decrease the traffic in certain areas (e.g. by adding new roads). We decided to take the example of the Autobahn (A10) that is surrounding Berlin as our model.  Once we create this model we want to analyze the resulting traffic data (including hotspots) to identify where traffic is at its worst.  Once we determine these spots we will add additional highways to determine if this will alieviate traffic or cause additional hotspots to arise in different areas.  
+
 (Abstract here - basically your pitch with some modification - but short overview)
 
 ![Berlin Map](images/Berlin_road_map.png) 
-
-(directions, - remove)
-* (this Readme should "evolve" over time as you add and edit it)
-* (once you are happy with it - copy it into the proposal directory, and remove the obvious sections that should be removed - Future work, etc)
-
 
 ## General Introduction
 
 (States your motivation clearly: why is it important / interesting to solve this problem?)
 (Add real-world examples, if any)
 (Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+
+
 
 (You should begin by introducing your topic. In this section, you should define the core terminology specific to the field, introduce the problem statement, and make clear the benefits (motivate!) of resolving that problem statement. The main difference between the ABSTRACT and Introduction sections is that the abstract summarizes the entire project, including results, whereas the introduc-tion only provides the motivation of the problem and an overview of the proposed solution.)
 
