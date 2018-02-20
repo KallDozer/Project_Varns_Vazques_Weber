@@ -10,21 +10,57 @@ The proposal involves:
     sound research methods
     you looked at and familiar with related work
 
-Introduction
+**General Introduction
+
+1. What is the topic?
+Our topic is dealing with the issue of city-planning in general and in special measures that can decrease the traffic in certain areas (e.g. by adding new roads).
+ 
+2. What do you want do?
+We want to start modeling a simple highway with multiple on- and off-ramps.
+After the system is producing the corresponding traffic data (including hotspots), we want to add an additional road to bypass the highway and analyze, if this could reduce the overall traffic.
+ 
+3. Why is it important?
+Traffic is a current problem in large cities and we want to figure out, if additional roads could help to minimize traffic jams or if the city-planners have to find some other measurements to face this situation.
+
+(States your motivation clearly: why is it important / interesting to solve this problem?) (Add real-world examples, if any) (Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+
+(You should begin by introducing your topic. In this section, you should define the core terminology specific to the field, introduce the problem statement, and make clear the benefits (motivate!) of resolving that problem statement. The main difference between the ABSTRACT and Introduction sections is that the abstract summarizes the entire project, including results, whereas the introduc-tion only provides the motivation of the problem and an overview of the proposed solution.)
+
+(I tell sutdents to answer the questions, one paragaph each to start if you are lost)
+
+(Problem Statement. One paragraph to describe the prob-lem that you are tackling.)
+
+(Motivation. Why is this problem interesting and relevant to the research community?)
+
+(Proposed Solution. How do we propose to tackle this problem (that has been identified in the previous para-graphs, is interesting to the community, and has yet to be tackled by other researchers)?)
+
+(Contributions. An enumeration of the contributions of the senior design project)
+
+(This project makes the following contributions:)(you must have this!!) • (Contribution 1) • (Contribution 2)
+The Model
+
+(Provide structural and behavior diagrams of the system you wish to study.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?) (Use the model to tell us what is going on.)
+
+(explicitly list your requirements of what the model will have and simulate for the proposal)
 
 
-Problem Statement
+**Fundamental Questions
+
+(At the end of the project you want to find the answer to these questions) (Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
 
 
-Simulation Technique
+**Expected Results
+
+(What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
 
 
-Data Source
+**Research Methods
 
+(Cellular Automata, Agent-Based Model, Discrete Event Continuous Modeling...)(Python or Anylogic) (If you are not sure here: 1. Consult your colleagues, 2. ask the teachers, 3. remember that you can change it afterwards) (Steps in the process)
+(Other)
 
-Schedule
+(change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
 
+References
 
-Conclusion
-
-
+(Add the bibliographic references you intend to use) (Code / Projects / blogs / websites / papers...)
