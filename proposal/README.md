@@ -9,3 +9,22 @@ The proposal involves:
     Having a clear hypothesis(es) and experiment(s) 
     sound research methods
     you looked at and familiar with related work
+
+Introduction
+
+
+Problem Statement
+
+
+Simulation Technique
+
+
+Data Source
+
+
+Schedule
+
+
+Conclusion
+
+
