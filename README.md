@@ -1,14 +1,13 @@
 # IDS6145(SimTech 2018) - Research Plan (Template)
 (remember all text between brackets to be removed in proposal and final, like template above)
 
-> * Group Name: (be creative!)
-> * Group participants names: (alphabetically sorted by last name)
-> * Project Title: (can be changed later)
+> * Group Name: The Quarter Dirty Dozen
+> * Group participants names: Brian Varns, Gabrielle Vasquez, Matthias Weber
+> * Project Title: City-Traffic-Planning
 
 (Abstract here - basically your pitch with some modification - but short overview)
-(TEASER IMAGE HERE - should wow me to read your work)
 
-
+![Berlin Map](images/Berlin_road_map.png) 
 
 (directions, - remove)
 * (this Readme should "evolve" over time as you add and edit it)
