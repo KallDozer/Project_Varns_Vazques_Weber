@@ -65,15 +65,15 @@ For our two fundamental questions we expect for first identify traffic congestio
 
 1 road from North to South:
 <p align="left"><img src="../images/Berlin_N_S.png" width="400"></p>
-<br>Figure 4: Expected Results (v1)</br>
-</n>
+Figure 4: Expected Results (v1)
 
-1 road from West to East:
+
+<br>1 road from West to East:</br>
 <p align="left"><img src="../images/Berlin_W_E.png" width="400"></p>
 Figure 5: Expected Results (v2)
-</n>
 
-Mix from both previous attempts:
+
+<br>Mix from both previous attempts:</br>
 <p align="left"><img src="../images/Berlin_BOTH.png" width="400"></p>
 Figure 6: Expected Results (v3)
 
