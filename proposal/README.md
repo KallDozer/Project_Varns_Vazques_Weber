@@ -64,21 +64,16 @@ In the first part of our project, we want to clarify if the traffic situation ca
 For our two fundamental questions we expect for first identify traffic congestion during peak times.  We expect these conjestion areas to align with heavy traffic flow from the busiest on and off ramps identified in Figure 8.  Once identified we will attempt to allieviate this traffic through addition or subtraction of roads (on and off ramps, highways).  Below are some proposed solutions to reduced traffic congestions bz adding routes in along different parts of the A10:4
 
 1 road from North to South:
-
 <img src="../images/Berlin_N_S.png" width="400">
-     Figure 4: Expected Results (v1)
-
+Figure 4: Expected Results (v1)
 
 1 road from West to East:
-
 <img src="../images/Berlin_W_E.png" width="400">
-     Figure 5: Expected Results (v2)
-
+Figure 5: Expected Results (v2)
 
 Mix from both previous attempts:
-
 <img src="../images/Berlin_BOTH.png" width="400">
-     Figure 6: Expected Results (v3)
+Figure 6: Expected Results (v3)
 
 
 ## Research Methods
