@@ -4,7 +4,7 @@
 
 Our project is dealing with the issue of city-planning and in special measures that can decrease the traffic in certain areas (e.g. by adding new roads). We decided to take the example of the Autobahn (A10) that is surrounding Berlin as our model. Once we create this model we want to analyze the resulting traffic data (including hotspots) to identify where traffic is at its worst. Once we determine these spots we will add additional highways to determine if this will alleviate traffic or cause additional hotspots to arise in different areas.
 
-<img src="../images/Berlin_road_map.png" width="700" align="middle">
+<img src="../images/Berlin_road_map.png" width="700" align="right">
 
 ## General Introduction
 
