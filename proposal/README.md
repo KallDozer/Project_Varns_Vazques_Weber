@@ -4,6 +4,7 @@ Project Title: City-Traffic-Planning (CTP)
 
 Our project is dealing with the issue of city-planning and in special measures that can decrease the traffic in certain areas (e.g. by adding new roads). We decided to take the example of the Autobahn (A10) that is surrounding Berlin as our model. Once we create this model we want to analyze the resulting traffic data (including hotspots) to identify where traffic is at its worst. Once we determine these spots we will add additional highways to determine if this will alleviate traffic or cause additional hotspots to arise in different areas.
 
+![Berlin Map](images/Berlin_road_map.png) 
 
 ## General Introduction
 
@@ -38,6 +39,10 @@ To complete this experiment the researchers will conduct a study to identify a s
 ## The Model
 Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car” and “Truck”.
 
+![Structural_Diagram](images/Structural_Diagram.png) 
+
+![Behavioral_Diagram](images/Behavioral_Diagram.png) 
+
 
 We identified these elements, due to the following requirements:
 + the simulation should mimic the traffic-situation on the A10, that is surrounding Berlin (Germany)
@@ -58,9 +63,17 @@ The next step is to find out if infrastructural measures can reduce these restri
 (What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
 
 The analysis of the hotspots could lead to the following attempts to reduce them, by adding routes in different ways:
-1 road from North to South:            1 road from West to East:
-        
+1 road from North to South:
+
+![Berlin_N_S](images/Berlin_N_S.png) 
+
+1 road from West to East:
+
+![Berlin_W_E](images/Berlin_W_E.png) 
+
 Mix from both previous attempts:
+
+![Berlin_BOTH](images/Berlin_BOTH.png) 
 
 
 ## Research Methods
@@ -83,14 +96,11 @@ This image includes the 14 identified On/Off-sections, with the amount of vehicl
 The A10 is normally consisting out of 3 lanes for each direction.
 Exception: between point 9 and point 14 (and 14 to 9) the A10 is just offering 2 lanes for each direction.
 
+![Ramps_Traffic](images/Ramps_Traffic.png) 
 
 The length of the A10 is 195 km in total and the locations for the On/Off-sections are located at the following autobahn-positions:
-  1:     0 km / 195 km      2:   19 km          3:   29 km          4:   40 km    
-  5:   54 km              6:   70 km          7:   86 km          8:   99 km
-  9: 108 km            10: 128 km        11: 135 km        12: 155 km
-13: 167 km            14: 185 km
 
-
+![Berlin_Ramps_Positions](images/Berlin_Ramps_Positions.png) 
 
 
 
