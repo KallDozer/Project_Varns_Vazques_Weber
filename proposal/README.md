@@ -5,6 +5,8 @@
 Our project is dealing with the issue of city-planning and in special measures that can decrease the traffic in certain areas (e.g. by adding new roads). We decided to take the example of the Autobahn (A10) that is surrounding Berlin as our model. Once we create this model we want to analyze the resulting traffic data (including hotspots) to identify where traffic is at its worst. Once we determine these spots we will add additional highways to determine if this will alleviate traffic or cause additional hotspots to arise in different areas.
 
 <p align="center"><img src="../images/Berlin_road_map.png" width="700"></p>
+Figure 1: Map of A10
+
 
 ## General Introduction
 
@@ -64,16 +66,17 @@ The analysis of the hotspots could lead to the following attempts to reduce them
 1 road from North to South:
 
 <img src="../images/Berlin_N_S.png" width="400">
-
+Figure 4: Expected Results (v1)
 
 1 road from West to East:
 
 <img src="../images/Berlin_W_E.png" width="400">
+Figure 5: Expected Results (v2)
 
 Mix from both previous attempts:
 
 <img src="../images/Berlin_BOTH.png" width="400">
-Figure 4: Expected Results
+Figure 6: Expected Results (v3)
 
 
 ## Research Methods
@@ -98,11 +101,12 @@ Overall, the simulation will be developed in such a way to accurately mimic the 
 The below image includes the 14 identified On/Off-sections, with the amount of vehicles per day for the road-section between these areas.  We will use this data to determine how many cars will enter and exit the points of the A10 and identify where and when traffic congestion occurs.
 
 <p align="center"><img src="../images/Ramps_Traffic.png" width="800"></p>
+Figure 7: On/Off-sections
 
 The length of the A10 is 195 km in total and the locations for the On/Off-sections are located at the following autobahn-positions:
 
 ![Berlin_Ramps_Positions](../images/Berlin_Ramps_Positions.png) 
-Figure 6: A10 Real Data
+Figure 8: A10 Real Data
 
 The A10 consists of three lanes of traffic heading in both directions.  There is one exception, which is between point 9 and point 14 where the A10 offers two lanes for each direction.
 
