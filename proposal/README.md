@@ -36,7 +36,7 @@ To complete this experiment the researchers will conduct a study to identify a s
 + Our code and models will be open sourced to be used by any individual or organization.
 
 ## The Model
-Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car” and “Truck”.  The vehicle component will have the ability for freedom of movement, meaning they will have the ability to enter and exit freely to get to their destination.  This will be part of their programing and is the reason we left out “People” from the experiment.  
+Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car” and “Truck”.  The vehicle component will have the ability for freedom of movement, meaning they will have the ability to enter and exit freely to get to their destination  This will be part of their programing and is the reason we left out “People” from the experiment.  
 
 ![Structural_Diagram](../images/Structural_Diagram.PNG)
 Figure 2: Object Diagram
@@ -61,7 +61,7 @@ In the first part of our project, we want to clarify if the traffic situation ca
 
 ## Expected Results
 
-The analysis of the hotspots could lead to the following attempts to reduce them, by adding routes in different ways:
+For our two fundamental questions we expect for first identify traffic congestion during peak times.  We expect these conjestion areas to align with heavy traffic flow from the busiest on and off ramps identified in Figure 8.  Once identified we will attempt to allieviate this traffic through addition or subtraction of roads (on and off ramps, highways).  Below are some proposed solutions to reduced traffic congestions bz adding routes in along different parts of the A10:4
 
 1 road from North to South:
 
@@ -106,6 +106,7 @@ Figure 7: On/Off-sections
 The length of the A10 is 195 km in total and the locations for the On/Off-sections are located at the following autobahn-positions:
 
 ![Berlin_Ramps_Positions](../images/Berlin_Ramps_Positions.png) 
+
 Figure 8: A10 Real Data
 
 The A10 consists of three lanes of traffic heading in both directions.  There is one exception, which is between point 9 and point 14 where the A10 offers two lanes for each direction.
