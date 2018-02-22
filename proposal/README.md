@@ -66,15 +66,11 @@ For our two fundamental questions we expect for first identify traffic congestio
 1 road from North to South:
 <p align="left"><img src="../images/Berlin_N_S.png" width="400"></p>
 Figure 4: Expected Results (v1)
-<br>
-
-
+</n>
 1 road from West to East:
 <p align="left"><img src="../images/Berlin_W_E.png" width="400"></p>
 Figure 5: Expected Results (v2)
-<br>
-
-
+</n>
 Mix from both previous attempts:
 <p align="left"><img src="../images/Berlin_BOTH.png" width="400"></p>
 Figure 6: Expected Results (v3)
