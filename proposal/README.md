@@ -39,9 +39,9 @@ To complete this experiment the researchers will conduct a study to identify a s
 ## The Model
 Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car” and “Truck”.
 
-![Structural_Diagram](../images/Structural_Diagram.png) 
+![Structural_Diagram](../images/Structural_Diagram.PNG) 
 
-![Behavioral_Diagram](../images/Behavioral_Diagram.png) 
+![Behavioral_Diagram](../images/Behavioral_Diagram.PNG) 
 
 
 We identified these elements, due to the following requirements:
@@ -51,7 +51,7 @@ We identified these elements, due to the following requirements:
 + the position of the in- and outflow areas should be based on their counterparts in the real world
 + the simulation must handle 2 different kind of vehicles (car and truck) 
 + the simulation must include car following behaviour
-as a data source the simulation must use appropriate collected and realistical data
++ as a data source the simulation must use appropriate collected and realistical data
 + the simulation should show whether infrastructural improvements can significantly reduce congestions or not
 
 ## Fundamental Questions
@@ -63,6 +63,7 @@ The next step is to find out if infrastructural measures can reduce these restri
 (What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
 
 The analysis of the hotspots could lead to the following attempts to reduce them, by adding routes in different ways:
+
 1 road from North to South:
 
 <img src="../images/Berlin_N_S.png" width="400">
@@ -76,11 +77,13 @@ Mix from both previous attempts:
 <img src="../images/Berlin_BOTH.png" width="400">
 
 ## Research Methods
+
 **Models
 
 For this simulated experiment, we will be developing simulated cars and agents to mimic the common driving behaviors of everyday human, civilians. The sample size that we have implemented within the simulation was based on real and synthetic data that we have derived  from www.bast.de and http://www.autobahnatlas-online.de/A10.htm.
 
 **Experimental Protocol 
+
 For the purpose of this project, we will be implementing an agent-based simulation using AnyLogic to simulate our experiment. We plan on running our simulation an -insert number- of times to ensure our data best represents results if this simulation were to occur in a live simulation. 
 
 **Experimental Paradigm 
