@@ -39,9 +39,9 @@ To complete this experiment the researchers will conduct a study to identify a s
 ## The Model
 Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car” and “Truck”.
 
-![Structural_Diagram](images/Structural_Diagram.png) 
+![Structural_Diagram](../images/Structural_Diagram.png) 
 
-![Behavioral_Diagram](images/Behavioral_Diagram.png) 
+![Behavioral_Diagram](../images/Behavioral_Diagram.png) 
 
 
 We identified these elements, due to the following requirements:
@@ -65,15 +65,15 @@ The next step is to find out if infrastructural measures can reduce these restri
 The analysis of the hotspots could lead to the following attempts to reduce them, by adding routes in different ways:
 1 road from North to South:
 
-![Berlin_N_S](images/Berlin_N_S.png) 
+![Berlin_N_S](../images/Berlin_N_S.png) 
 
 1 road from West to East:
 
-![Berlin_W_E](images/Berlin_W_E.png) 
+![Berlin_W_E](../images/Berlin_W_E.png) 
 
 Mix from both previous attempts:
 
-![Berlin_BOTH](images/Berlin_BOTH.png) 
+![Berlin_BOTH](../images/Berlin_BOTH.png) 
 
 
 ## Research Methods
@@ -96,11 +96,11 @@ This image includes the 14 identified On/Off-sections, with the amount of vehicl
 The A10 is normally consisting out of 3 lanes for each direction.
 Exception: between point 9 and point 14 (and 14 to 9) the A10 is just offering 2 lanes for each direction.
 
-![Ramps_Traffic](images/Ramps_Traffic.png) 
+![Ramps_Traffic](../images/Ramps_Traffic.png) 
 
 The length of the A10 is 195 km in total and the locations for the On/Off-sections are located at the following autobahn-positions:
 
-![Berlin_Ramps_Positions](images/Berlin_Ramps_Positions.png) 
+![Berlin_Ramps_Positions](../images/Berlin_Ramps_Positions.png) 
 
 
 
