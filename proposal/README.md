@@ -13,15 +13,15 @@ Congestion on any modern highway greatly reduces our quality of life and steals 
 
 A 2010 RAND study noted that traffic congestion is created by an imbalance in the supply of and demand for road space.  This, coupled with the fact that we have limited options to build ourselves new roads that bypass these issues, is creating traffic jams in large cities on a scale never seen before.  Autobahns located in Germany in 2017 experienced:
 
-+Traffic jams increased by 4 percent in 2017 or by 723,000 more than 2016.
++ Traffic jams increased by 4 percent in 2017 or by 723,000 more than 2016.
 
-+The length of the jams in 2017 totalled 1,448,000 kilometers (899,745 miles), a rise of 5 percent.
++ The length of the jams in 2017 totalled 1,448,000 kilometers (899,745 miles), a rise of 5 percent.
 
-+Road users were stuck in traffic for a total of 457,000 hours, a rise of 9 percent.
++ Road users were stuck in traffic for a total of 457,000 hours, a rise of 9 percent.
 
-+The worst months for traffic congestion in 2017 were May and September.
++ The worst months for traffic congestion in 2017 were May and September.
 
-+Thursdays were the worst day of the week with an average of 5,365 kilometers of jams.
++ Thursdays were the worst day of the week with an average of 5,365 kilometers of jams.
 
 ## Motivation:
 
@@ -32,7 +32,7 @@ Traffic congestion on the Autobahn is amongst the worst in the world.  This cong
 To complete this experiment the researchers will conduct a study to identify a strategy to reduce traffic congestion that could be implemented in different cities across the world.  For the purpose of this experiment we will use the Autobahn 10 in Germany.  The researchers reviewed literature related to congestion and typical driving patterns of humans, examined existing data for traffic flow on and off of the Autobahn, and will analyze historical hotspots for traffic congestion.  With this data we will create a model of the Autobahn, of vehicles (cars and trucks), and of drivers.  Once created we will run this model to identify key hotspots on the Autobahn and develop simple bypasses for alleviating this congestion.
 
 ## Contributions:
-+ddsf
++ ddsf
 + Our research should present a resilient approach/guidance for city-planner to fight the common traffic problems of congestion
 
 ## The Model
@@ -40,14 +40,14 @@ Our created model is a good abstraction of the given problem, due to the fact th
 
 
 We identified these elements, due to the following requirements:
-+the simulation should mimic the traffic-situation on the A10, that is surrounding Berlin (Germany)
-+the simulation-model must pay attention to the dimension of the corresponding and used roads
-+the model should just pay attention to the major in- and outflow areas
-+the position of the in- and outflow areas should be based on their counterparts in the real world
-+the simulation must handle 2 different kind of vehicles (car and truck) 
-+the simulation must include car following behaviour
++ the simulation should mimic the traffic-situation on the A10, that is surrounding Berlin (Germany)
++ the simulation-model must pay attention to the dimension of the corresponding and used roads
++ the model should just pay attention to the major in- and outflow areas
++ the position of the in- and outflow areas should be based on their counterparts in the real world
++ the simulation must handle 2 different kind of vehicles (car and truck) 
++ the simulation must include car following behaviour
 as a data source the simulation must use appropriate collected and realistical data
-+the simulation should show whether infrastructural improvements can significantly reduce congestions or not
++ the simulation should show whether infrastructural improvements can significantly reduce congestions or not
 
 ## Fundamental Questions
 In the first part of our project, we want to clarify if the traffic situation can be adequately mapped, including the existing restrictions on the traffic flow.
