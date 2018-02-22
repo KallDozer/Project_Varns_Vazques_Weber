@@ -36,7 +36,7 @@ To complete this experiment the researchers will conduct a study to identify a s
 + Our code and models will be open sourced to be used by any individual or organization.
 
 ## The Model
-Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car” and “Truck”.  The vehicle component will have the ability for freedom of movement, meaning they will have the ability to enter and exit freely to get to their destination  This will be part of their programing and is the reason we left out “People” from the experiment.  
+Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car” and “Truck”.  The vehicle component will have the ability for freedom of movement, meaning they will have the ability to enter and exit freely to get to their destination; the "Vehicle" will operate simliarly to typical, human driving behaviors.  This will be part of their programing and is the reason we left out “People” from the experiment.  
 
 ![Structural_Diagram](../images/Structural_Diagram.PNG)
 Figure 2: Object Diagram
