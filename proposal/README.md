@@ -4,7 +4,7 @@
 
 Our project is dealing with the issue of city-planning and in special measures that can decrease the traffic in certain areas (e.g. by adding new roads). We decided to take the example of the Autobahn (A10) that is surrounding Berlin as our model. Once we create this model we want to analyze the resulting traffic data (including hotspots) to identify where traffic is at its worst. Once we determine these spots we will add additional highways to determine if this will alleviate traffic or cause additional hotspots to arise in different areas.
 
-![Berlin Map](../images/Berlin_road_map.png) 
+<img src="../images/Berlin_road_map.png" width="700">
 
 ## General Introduction
 
@@ -95,7 +95,7 @@ This image includes the 14 identified On/Off-sections, with the amount of vehicl
 The A10 is normally consisting out of 3 lanes for each direction.
 Exception: between point 9 and point 14 (and 14 to 9) the A10 is just offering 2 lanes for each direction.
 
-<img src="../images/Ramps_Traffic.png" width="500">
+<img src="../images/Ramps_Traffic.png" width="800">
 
 The length of the A10 is 195 km in total and the locations for the On/Off-sections are located at the following autobahn-positions:
 
