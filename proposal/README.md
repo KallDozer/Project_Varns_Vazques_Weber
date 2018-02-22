@@ -65,17 +65,15 @@ The next step is to find out if infrastructural measures can reduce these restri
 The analysis of the hotspots could lead to the following attempts to reduce them, by adding routes in different ways:
 1 road from North to South:
 
-![Berlin_N_S](../images/Berlin_N_S.png)
-<img src="../images/Berlin_N_S.png" width="200">
+<img src="../images/Berlin_N_S.png" width="400">
 
 1 road from West to East:
 
-![Berlin_W_E](../images/Berlin_W_E.png){:height="36px" width="36px"}
+<img src="../images/Berlin_W_E.png" width="400">
 
 Mix from both previous attempts:
 
-![Berlin_BOTH](../images/Berlin_BOTH.png) 
-
+<img src="../images/Berlin_BOTH.png" width="400">
 
 ## Research Methods
 **Models
@@ -97,7 +95,7 @@ This image includes the 14 identified On/Off-sections, with the amount of vehicl
 The A10 is normally consisting out of 3 lanes for each direction.
 Exception: between point 9 and point 14 (and 14 to 9) the A10 is just offering 2 lanes for each direction.
 
-![Ramps_Traffic](../images/Ramps_Traffic.png) 
+<img src="../images/Ramps_Traffic.png" width="500">
 
 The length of the A10 is 195 km in total and the locations for the On/Off-sections are located at the following autobahn-positions:
 
