@@ -65,7 +65,7 @@ The next step is to find out if infrastructural measures can reduce these restri
 The analysis of the hotspots could lead to the following attempts to reduce them, by adding routes in different ways:
 1 road from North to South:
 
-![Berlin_N_S](../images/Berlin_N_S.png) 
+![Berlin_N_S](./images/Berlin_N_S.png =250x) 
 
 1 road from West to East:
 
