@@ -42,7 +42,7 @@ Our created model is a good abstraction of the given problem, due to the fact th
 <p align="center">Figure 2: Object Diagram</p>
 
 
-![Behavioral_Diagram](../images/Behavioral_Diagram.PNG) 
+![Behavioral_Diagram](/images/Behavioral_Diagram.PNG) 
 <p align="center">Figure 3: Behavior Diagram</p>
 
 We identified these elements, due to the following requirements:
