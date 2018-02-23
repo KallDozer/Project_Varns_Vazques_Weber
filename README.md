@@ -4,7 +4,7 @@
 
 Our project is dealing with the issue of city-planning and in special measures that can decrease the traffic in certain areas (e.g. by adding new roads). We decided to take the example of the Autobahn (A10) that is surrounding Berlin as our model. Once we create this model we want to analyze the resulting traffic data (including hotspots) to identify where traffic is at its worst. Once we determine these spots we will add additional highways to determine if this will alleviate traffic or cause additional hotspots to arise in different areas.
 
-<p align="center"><img src="../images/Berlin_road_map.png" width="700"></p>
+<p align="center"><img src="/images/Berlin_road_map.png" width="700"></p>
 <p align="center">Figure 1: Map of A10</p>
 
 
@@ -38,7 +38,7 @@ To complete this experiment the researchers will conduct a study to identify a s
 ## The Model
 Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car” and “Truck”.  The vehicle component will have the ability for freedom of movement, meaning they will have the ability to enter and exit freely to get to their destination; the "Vehicle" will operate simliarly to typical, human driving behaviors in that the "Vehicle" driving behavior will be more predictiable than humans.  This will be part of their programing and is the reason we left out “People” from the experiment.  
 
-![Structural_Diagram](../images/Structural_Diagram.PNG)
+![Structural_Diagram](/images/Structural_Diagram.PNG)
 <p align="center">Figure 2: Object Diagram</p>
 
 
@@ -64,17 +64,17 @@ In the first part of our project, we want to clarify if the traffic situation ca
 For our two fundamental questions we expect for first identify traffic congestion during peak times.  We expect these conjestion areas to align with heavy traffic flow from the busiest on and off ramps identified in Figure 8.  Once identified we will attempt to allieviate this traffic through addition or subtraction of roads (on and off ramps, highways).  Below are some proposed solutions to reduced traffic congestions bz adding routes in along different parts of the A10:4
 
 <br><u>1 road from North to South:</u></br>
-<p align="left"><img src="../images/Berlin_N_S.png" width="400"></p>
+<p align="left"><img src="/images/Berlin_N_S.png" width="400"></p>
 Figure 4: Expected Results (v1)
 
 
 <br><u>1 road from West to East:</u></br>
-<p align="left"><img src="../images/Berlin_W_E.png" width="400"></p>
+<p align="left"><img src="/images/Berlin_W_E.png" width="400"></p>
 Figure 5: Expected Results (v2)
 
 
 <br>Mix from both previous attempts:</br>
-<p align="left"><img src="../images/Berlin_BOTH.png" width="400"></p>
+<p align="left"><img src="/images/Berlin_BOTH.png" width="400"></p>
 Figure 6: Expected Results (v3)
 
 
@@ -99,12 +99,12 @@ Overall, the simulation will be developed in such a way to accurately mimic the 
 
 The below image includes the 14 identified On/Off-sections, with the amount of vehicles per day for the road-section between these areas.  We will use this data to determine how many cars will enter and exit the points of the A10 and identify where and when traffic congestion occurs.
 
-<p align="center"><img src="../images/Ramps_Traffic.png" width="800"></p>
+<p align="center"><img src="/images/Ramps_Traffic.png" width="800"></p>
 <p align="center">Figure 7: On/Off-sections</p>
 
 The length of the A10 is 195 km in total and the locations for the On/Off-sections are located at the following autobahn-positions:
 
-![Berlin_Ramps_Positions](../images/Berlin_Ramps_Positions.png)
+![Berlin_Ramps_Positions](/images/Berlin_Ramps_Positions.png)
 <p align="center">Figure 8: A10 Real Data</p>
 
 The A10 consists of three lanes of traffic heading in both directions.  There is one exception, which is between point 9 and point 14 where the A10 offers two lanes for each direction.
