@@ -1,4 +1,4 @@
-# IDS6145(SimTech 2018) - Research Plan (Template)
+# IDS6145(SimTech 2018) - Research Plan
 
 > * Group Name: The Quarter Dirty Dozen
 > * Group participants names: Brian Varns, Gabrielle Vasquez, Matthias Weber
