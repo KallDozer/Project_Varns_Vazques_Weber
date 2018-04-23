@@ -111,9 +111,15 @@ The length of the A10 is 195 km in total and the locations for the On/Off-sectio
 
 The A10 consists of three lanes of traffic heading in both directions.  There is one exception, which is between point 9 and point 14 where the A10 offers two lanes for each direction.
 
+## Results
+
+For this expeirment, we have set up state probabilities to 30%; this is the probability that the agents in this model would stay on the road.  We had then set our parameters as bp prob, the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. 
+
+The bypass fixed the model in which the agents could move in a fashion that properly flow; agents were no longer getting 
+
 ## Discussion
 
-Our results indicate that the Autobahn 10 should be a government controlled road, similar to the system that is implemented in the Florida road system (i.e. the Fast Pass system). With such a system, we would suggest charging taxes to the citizens of Germany to allow them to use the bypass will decrease traffic on these roads; we assume that only a certain percentage of drivers will pay the tax to use this bypass allowing the other roads to not become overcrowded. 
+Our results indicate that the Autobahn 10 should be a government controlled road, similar to the system that is implemented in the Florida road system (i.e. the Fast Pass system). With such a system, we would suggest charging taxes to the citizens of Germany to allow them to use the bypass which will then decrease traffic on these roads; we assume that only a certain percentage of drivers will pay the tax to use this bypass allowing the other roads to not become overcrowded. This bypass alloows for traffic to flow
 
 We have chosen to use an exponetial distrubtion to see what effect it has on arrival rate on the cars in this model. The purpose of using the Exponential distribution is for its ability to represent the time between random occurrences, such as the time between arrivals at a specific location in a queuing model, in our experiment, eliminating traffic on the Autobarn 10 in Germany. It has also been used to represent the services times of a specific operation. Further, it serves as an explicit manner in which the time dependence on noise may be treated. One issue we have came across was that we cannot apply an exponential distribution. For each on and off ramp, we have set the probabilities so that each car has the probability of using that specific
 
