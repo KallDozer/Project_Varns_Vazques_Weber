@@ -110,14 +110,27 @@ The length of the A10 is 195 km in total and the locations for the On/Off-sectio
 <p align="center">Figure 8: A10 Real Data</p>
 
 The A10 consists of three lanes of traffic heading in both directions.  There is one exception, which is between point 9 and point 14 where the A10 offers two lanes for each direction.
+ 
+(image of the model and code)
 
 ## Results
 
-For this expeirment, we have set up state probabilities to 30%; this is the probability that the agents in this model would stay on the road.  We had then set our parameters as bp prob, the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. 
+For this expeirment, we have set up state probabilities to 30%; this is the probability that the agents in this model would stay on the road.  We had then set our parameters as "bp prob", the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. 
 
-The bypass fixed the model in which the agents could move in a fashion that properly flow; agents were no longer getting 
+(Three experiments were done compare the statistics with the bypasses set to 0.3, 0.5, and )
+
+(Model was scaled 1:10; effected total number of outputs)
+
+(Denisty maps were created to vosualize the red areas of the map that were getting backed up)
+
+(multiply the means and std dev by minutes in a day to get actual outputs)
+
+Bypasses do not fix the issue of traffic build up because 
+
 
 ## Discussion
+
+Our hypothesis was to find a method to decrease traffic on the Autobhan 10. We had built our model to built different bypasses to see if traffic would decrease and if the implementation
 
 Our results indicate that the Autobahn 10 should be a government controlled road, similar to the system that is implemented in the Florida road system (i.e. the Fast Pass system). With such a system, we would suggest charging taxes to the citizens of Germany to allow them to use the bypass which will then decrease traffic on these roads; we assume that only a certain percentage of drivers will pay the tax to use this bypass allowing the other roads to not become overcrowded. This bypass alloows for traffic to flow
 
@@ -130,11 +143,13 @@ We did not discover any difference in effect size after multiple runs of our sim
 Figures 1 & 2: The above images depicts traffic on exits 10 and 13. All intersections were built identical to one another, however, we have ran into issues which traffic would build up on these exits. 
 
 
-We have put in the efforts to replicate each exit to eliminate the issues of collisions and traffic, however, these exits tend to be affected no matter what we decide to implement (elongating roads, adding exits prior to other exits, etc.). Due to the capabilities of AnyLogic’s Learner Edition, we are limited to the functionalities that we could implement in this expeirment. There is a possilbity that this problem is occuring because of AnyLogic's ability to handle these types of problems; modeling such a problem is too large and requires too much processing power from AnyLogic. We were also limited to amount of code we could use for our model. The AnyLogic' Learner Edition limoits users to 200 boxes for their code; our base model code is alone over 100 boxes. Due to this limitation, we were unable to properly build our model to fix the complications that we have encountered. This issue had also prevented us from further testimng with the direction of the roads; this particular model needed more than 200 boxes worth of code which AnyLogic did not allow us to do. This effected pur testing with a road going from North to South. 
+We have put in the efforts to replicate each exit to eliminate the issues of collisions and traffic, however, these exits tend to be affected no matter what we decide to implement (elongating roads, adding exits prior to other exits, etc.). Due to the capabilities of AnyLogic’s Learner Edition, we are limited to the functionalities that we could implement in this expeirment. There is a possilbity that this problem is occuring because of AnyLogic's ability to handle these types of problems; modeling such a problem is too large and requires too much processing power from AnyLogic. We were also limited to amount of code we could use for our model. The AnyLogic' Learner Edition limoits users to 200 boxes for their code; our base model code is alone over 100 boxes. Due to this limitation, we were unable to properly build our model to fix the complications that we have encountered. This issue had also prevented us from further testimng with the direction of the roads; this particular model needed more than 200 boxes worth of code which AnyLogic did not allow us to do. This effected our ability to test other bypasses. We focused our efforts in decreasing traffic in areas that were getting built up the most, which was the bypass from North to South. 
 
 
 Due to complications from the build of our simulation, we have came to the possibility of two reasons as to why this would occur: 1) the AnyLogic program was not built to handle a simulation of this type and another program should be used to model this issue or 2) adjustments to the construction of the Autobahn 10 must be made. AnyLogic is a multimethod simulation modeling tool meant to model discrete, agent-based, and system dynamics. Given this, this makes AnyLogic ideal for investigating systems in the domains of healthcare, marketing, supply and demand, and particularly for road traffic. We had chosen to model and simulate our problem with the AnyLogic system because of its ability to model the characteristics of road traffic (traffic jams, cars entering and exiting from exits and roads, etc.). Working more with this system, we started seeing issues with our simulation in that we had collisions occurring in areas of the Autobahn 10; cars were getting stuck on the exits. We discovered that the methods we were going about with trying to solve this issue were not working, which then leads us to believe that the AnyLogic system was not ideal for such a model. 
 The student edition only allows users to run models for only an hour. This limits us to use real world data to accurately simulate problems that run for a minmiumn of 24 hours. We also assume that the AnyLogic Student Edition lacks processing power in that it is unable to handle the amount of variables, paramters, agents, etc. that we have included within our model - is it not built for such high, processing power models that contain high values. It has forced us to manipulate the numbers in which to change the model's behavior. This has disabled us to represent the behaviors of cars in an applied setting; we cannot account for ecological validity. The behaviors of our agents are not representative of what we would see on the Autobahn 10 or any other highway.
+
+
 
 ## Future Work
 
