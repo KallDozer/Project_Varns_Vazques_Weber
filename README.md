@@ -115,15 +115,14 @@ The A10 consists of three lanes of traffic heading in both directions.  There is
 
 ## Results
 
-For this expeirment, we have set up state probabilities to 30%; this is the probability that the agents in this model would stay on the road.  We had then set our parameters as "bp prob", the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. For the three experiments that we have conducted, we had set the probabilities to 0.3, 0.5, and 0.8. Given our model was 
+For this expeirment, we have set up state probabilities to 30%; this is the probability that the agents in this model would stay on the road.  We had then set our parameters as "bp prob", the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. For the three experiments that we have conducted, we had set the probabilities to 0.3, 0.5, and 0.8. Given the size of our model, we had set our ratio as 1:10 to get the best look of our model. 
 
-(Three experiments were done compare the statistics with the bypasses set to 0.3, 0.5, and )
+Before setting the probablility of exiting as 0.3, our density map demostartes back up occuring throughtout the Autobahn 10, with the most congested exits being Exit 10 and Exit 13; this is demostarted in the desity map below (Figure --). By then adding in the bypasses to the Auto Bahn 10, we then saw the roads becoming less congested, but this did not change for exits 10 and 13. These exits seem to become backed up no matter what was done to fix this. We assume that these congestion points occur due to drivers utalize these exits the most, which then led to tarffic becoming congested at these points. 
 
-(Model was scaled 1:10; effected total number of outputs)
+(M= 86.4 , SD = 8.64)
+(M = 86.4, SD= 8.64)
+(M = 8.64, SD = 8.64)
 
-(Denisty maps were created to vosualize the red areas of the map that were getting backed up)
-
-(multiply the means and std dev by minutes in a day to get actual outputs)
 
 Bypasses do not fix the issue of traffic build up because 
 
