@@ -131,6 +131,7 @@ With the model completed we add a distribution map that allowed us to track how 
 We could see that there were two primarly traffic flow issues from Phase 1.  Hotspots were occuring at intesection 10 and 13, while the rest of the A10 ran smoothly.  These areas of the map are where they A10 shrinks from three lanes to two lanes, or shortly there after in the case of intersection 10.  Each run of the simulation gave us the same results where traffic always seemed to back up at these on and off ramps.  Below is an image of these traffic jams.
 
 ![Intersection 10](images/Section10.png)
+
 **Figure 9: Intersection 10 Hotspot**
 
 ![Intersection 13](images/Section13.png)
@@ -147,6 +148,7 @@ Data collected from the distribution plot shows how long each of the entities st
 |Experiment|Count|Mean|Min|Max|Deviation|Mean Confidence|Sum|
 |**Phase 1**|11,251|8 Min 38 Sec|6.579E-4|53 Min 17 Sec|7 Min 12 Sec|9.456E-5|63.265 Days|
 
+**Table 2: Phase 1 Data**
 
 Phase 1 results show that 
 e had then set our parameters as "bp prob", the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. For the three experiments that we have conducted, we had set the probabilities to 0.3, 0.5, and 0.8. Given the size of our model, we had set our ratio as 1:10 to get the best look of our model.  
