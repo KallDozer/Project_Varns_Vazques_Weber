@@ -142,10 +142,10 @@ Data collected from the distribution plot shows how long each of the entities st
 ![Phase 1 Plot](images/Traffic_Distr_v1.png)
 **Figure 11: Phase 1 Distribution Plot**
 
-|         |            |   |   |   | |
-| ------------- |:-------------:| -----:| -----:| -----:| -----:|
-|Count|Mean|Min|Max|Deviation|Mean Confidence|Sum|
-|**Phase 1**|11,251||8 Min 38 Sec|6.579E-4|53 Min 17 Sec|7 Min 12 Sec|9.456E-5|63.265 Days|
+|         |            |   |   |   | | | |
+| ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
+|Experiment|Count|Mean|Min|Max|Deviation|Mean Confidence|Sum|
+|**Phase 1**|11,251|8 Min 38 Sec|6.579E-4|53 Min 17 Sec|7 Min 12 Sec|9.456E-5|63.265 Days|
 
 
 Phase 1 results show that 
