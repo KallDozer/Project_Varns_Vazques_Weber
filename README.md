@@ -142,10 +142,11 @@ Data collected from the distribution plot shows how long each of the entities st
 ![Phase 1 Plot](images/Traffic_Distr_v1.png)
 **Figure 11: Phase 1 Distribution Plot**
 
-|         |            |   |   |   | | | |  || ------------- |:-------------:| -----:| -----:| -----:| -----:|-----:| -----:| ----:|
-|Store|Customers Served|Cashier Utilization|Mean Wait Time|Min Wait Time|Max Wait Time| Mean Time In System|Min Time in System| Max Time in System|Queue Length|
-|**Target**|964|60%|0.0|0.0|0.0|97.073 Sec|32.371 Sec|246.952 Sec|0.0|
-|**Kohls**|964|60%|0.0|0.0|0.0|97.073 Sec|32.371 Sec|246.952 Sec|0.0|
+|         |            |   |   |   | |
+| ------------- |:-------------:| -----:| -----:| -----:| -----:|
+|Count|Mean|Min|Max|Deviation|Mean Confidence|Sum|
+|**Phase 1**|11,251||8 Min 38 Sec|6.579E-4|53 Min 17 Sec|7 Min 12 Sec|9.456E-5|63.265 Days|
+
 
 Phase 1 results show that 
 e had then set our parameters as "bp prob", the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. For the three experiments that we have conducted, we had set the probabilities to 0.3, 0.5, and 0.8. Given the size of our model, we had set our ratio as 1:10 to get the best look of our model.  
