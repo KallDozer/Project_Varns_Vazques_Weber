@@ -6,9 +6,9 @@
 
 Our project is dealing with the issue of city-planning and in special measures that can decrease the traffic in certain areas (e.g. by adding new roads). We decided to take the example of the Autobahn (A10) that is surrounding Berlin as our model. Once we create this model we want to analyze the resulting traffic data (including hotspots) to identify where traffic is at its worst. Once we determine these spots we will add additional highways to determine if this will alleviate traffic or cause additional hotspots to arise in different areas.
 
-<p align="center"><img src="/images/Berlin_road_map.png" width="700"></p>
-<p align="center">Figure 1: Map of A10</p>
+![Berlin Road Map](images/Berlin_road_map.png)
 
+**Figure 1: Map of A10**
 
 ## General Introduction
 
@@ -40,11 +40,13 @@ To complete this experiment the researchers will conduct a study to identify a s
 ## The Model
 Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car”.  The vehicle component will have the ability for freedom of movement, meaning they will have the ability to enter and exit freely to get to their destination; the "Vehicle" will operate simliarly to typical, human driving behaviors in that the "Vehicle" driving behavior will be more predictiable than humans.  This will be part of their programing and is the reason we left out “People” from the experiment.  
 
-![Structural_Diagram](/images/Structural_Diagram.PNG)
-<p align="center">Figure 2: Object Diagram</p>
+![Structural_Diagram](images/Structural_Diagram.PNG)
+
+**Figure 2: Object Diagram**
 
 ![Behavioral_Diagram](/images/Behavioral_Diagram.PNG) 
-<p align="center">Figure 3: Behavior Diagram</p>
+
+**Figure 3: Behavior Diagram**
 
 We identified these elements, due to the following requirements:
 + The simulation should mimic the traffic-situation on the A10, that is surrounding Berlin (Germany)
@@ -64,27 +66,26 @@ In the first part of our project, we want to clarify if the traffic situation ca
 
 For our two fundamental questions we expect for first identify traffic congestion during peak times.  We expect these conjestion areas to align with heavy traffic flow from the busiest on and off ramps identified in Figure 8.  Once identified we will attempt to allieviate this traffic through addition or subtraction of roads (on and off ramps, highways).  Below are some proposed solutions to reduced traffic congestions bz adding routes in along different parts of the A10:4
 
-<br><u>1 road from North to South:</u></br>
-<p align="left"><img src="/images/Berlin_N_S.png" width="400"></p>
-Figure 4: Expected Results (v1)
+Road from North to South
+![Expected 1](images/Berlin_N_S.png)
 
+**Figure 4: Expected Results (v1)**
 
-<br><u>1 road from West to East:</u></br>
-<p align="left"><img src="/images/Berlin_W_E.png" width="400"></p>
-Figure 5: Expected Results (v2)
+Road from West to East
+![Expected 2](images/Berlin_W_E.png)
 
+**Figure 5: Expected Results (v2)**
 
-<br>Mix from both previous attempts:</br>
-<p align="left"><img src="/images/Berlin_BOTH.png" width="400"></p>
-Figure 6: Expected Results (v3)
+Bypass from North to South and East to West
+![Expected 3](images/Berlin_BOTH.png)
 
+**Figure 6: Expected Results (v3)**
 
 ## Research Methods
 
 **Models
 
 For this simulated experiment, we will be developing simulated cars and agents to mimic the common driving behaviors of everyday human, civilians. The sample size that we have implemented within the simulation was based on real and synthetic data that we have derived  from www.bast.de and http://www.autobahnatlas-online.de/A10.htm.
-
 
 **Experimental Protocol 
 
@@ -95,18 +96,19 @@ For the purpose of this project, we will be implementing an agent-based simulati
 In setting up the simulation, we have ensured that the agents developed best mimicked the driving behaviors of humans by having them have the possibility of committing am rear-end accident. These agents were developed based from a comparison study conducted by McDonald, Curry,  Kandadai, Sommers, & Winston (2014). They found after looking at data comparing across ages and genders that the most common crash incident to occur among all groups were rear-ended accidents. Such accidents will be simulated into a design to mimic one of the possible ways that highway traffic could occur. 
 Overall, the simulation will be developed in such a way to accurately mimic the typical behaviors we see in human driving behaviors and functions of motor vehicles.
  
-
 ## Data
 
 The below image includes the 14 identified On/Off-sections, with the amount of vehicles per day for the road-section between these areas.  We will use this data to determine how many cars will enter and exit the points of the A10 and identify where and when traffic congestion occurs.
 
-<p align="center"><img src="/images/Ramps_Traffic.png" width="800"></p>
-<p align="center">Figure 7: On/Off-sections</p>
+![Ramps Data](images/Ramps_Traffic.png)
+
+**Figure 7: On/Off-sections**
 
 The length of the A10 is 195 km in total and the locations for the On/Off-sections are located at the following autobahn-positions:
 
 ![Berlin_Ramps_Positions](/images/Berlin_Ramps_Positions.png)
-<p align="center">Figure 8: A10 Real Data</p>
+
+**Figure 8: A10 Real Data**
 
 The A10 consists of three lanes of traffic heading in both directions.  There is one exception, which is between point 9 and point 14 where the A10 offers two lanes for each direction.
  
@@ -123,22 +125,23 @@ Additionally, we needed to develop accurate traffic flow that would represent th
 With the model completed we add a distribution map that allowed us to track how long each agent was on the A10.  The purpose of this plot was to gather how long each agent stay on the A10 and to allow us to determine if the solution we developed actually helped increase or decrease overall traffic times.  The last thing the researchers did to the model was add a heat map that depicted in green, yellow, orange, and red where hotspots were developing.  Below is an image of model after running and the results.
 
 ![PHASE 1](images/Denisty_v1.png)
-**Figure 8: Density Map for No Bypass**
+**Figure 9: Density Map for No Bypass**
 
 We could see that there were two primarly traffic flow issues from Phase 1.  Hotspots were occuring at intesection 10 and 13, while the rest of the A10 ran smoothly.  These areas of the map are where they A10 shrinks from three lanes to two lanes, or shortly there after in the case of intersection 10.  Each run of the simulation gave us the same results where traffic always seemed to back up at these on and off ramps.  Below is an image of these traffic jams.
 
 ![Intersection 10](images/Section10.png)
 
-**Figure 9: Intersection 10 Hotspot**
+**Figure 10: Intersection 10 Hotspot**
 
 ![Intersection 13](images/Section13.png)
 
-**Figure 10: Intersection 13 Hotspot**
+**Figure 11: Intersection 13 Hotspot**
 
 Data collected from the distribution plot shows how long each of the entities stayed on the A10 during the simulation.  Important to note that this data was collected an analyzed in Days, meaning we got very small numbers for each of the plot values, this data was then collected and analyzed by the researchers and calculated into minutes for the purpose of this paper.  Below is an image of the distribution plot and a table of our results.
 
 ![Phase 1 Plot](images/Traffic_Distr_v1.png)
-**Figure 11: Phase 1 Distribution Plot**
+
+**Figure 12: Phase 1 Distribution Plot**
 
 |         |            |   |   |   | | | |
 | ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
@@ -156,20 +159,22 @@ Once we determined where we were going to build our bypass we added additional c
 The bypass was built using a two lane system, meaning there were two lanes going each way.  The on and off ramps were controlled through a decision node that had an assigned bypass probobability.  This probability was set to 1 - bp prob and we then created a paramter that allowed us to set a value to determine this probability.  This value indicated the probability that agents would take this bypass.  We then ran three experiments changing this value to 0.3, 0.5, and 0.7 to determine if controlling the number of vehicles on the bypass could alleviate traffic on the A10.
 
 ![Model with Bypass Code](images/Model_overview_v2.png)
-**Figure 12: Model with Bypass**
+
+**Figure 13: Model with Bypass**
 
 **Phase 2: Sub Phase 1**
 
 Phase 2(1) set the bypass probability to 0.3 meaning only 30% of the vehicles would choose to take the bypass.  The remaining 70% would continue on the A10 with bevaviors established in Phase 1.  Below is an image of the simulation once the run was completed and an image of the data.  
 
 ![Sub Phase 1 Model](images/Density_v2_30.png)
-**Figure 13: Phase 2(1) Model**
+
+**Figure 14: Phase 2(1) Model**
 
 The traffic map shows that minimal utilization of the bypass actually freed up the traffic jam from intersection 13 and allowed traffic to move at a slower pace, but not become conjested where vehicles would barely move.  This did create increased traffic in intersection 2, 3, 4, 5, 7, 8, 9, 10, 11 and 14, however these were not complete traffic jams, but rather slower moving traffic.  It's important to note that no behaviors, i.e. speed limite, of the agents was changed for Phase 2, so the model and agents behaved the same.  The bypass seemed to allow the traffic to move more freely, but at a decreased speed.  
 
 ![Phase 2(1) Data](images/Traffic_Distr_v2_30.png)
 
-**Figure 14: Phase 2(1) Distribution Plot**
+**Figure 15: Phase 2(1) Distribution Plot**
 
 |         |            |   |   |   | | | |
 | ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
@@ -186,13 +191,13 @@ Phase 2(2) set the bypass probability to 0.5 meaning 50% of the vehicles would c
 
 ![Phase2(2) Data](images/Density_v2.png)
 
-**Figure 15: Phase 2(2) Model**
+**Figure 16: Phase 2(2) Model**
 
 The traffic map shows that increase utilization of the bypass created additional traffic between all intersections except between 3-4, 5-6, 9-10, and 11-12.  This did create traffic jams at intersections 2, 6, 10, and 13.  These areas had traffic that wouldn't move for long periods of time because of the number of models that arrived at this location at a given moment.     
 
 ![Phase 2(2) Data](images/Traffic_Distr_v2.png)
 
-**Figure 16: Phase 2(2) Data**
+**Figure 17: Phase 2(2) Data**
 
 |         |            |   |   |   | | | |
 | ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
@@ -209,13 +214,13 @@ Phase 2(3) set the bypass probability to 0.7 meaning 70% of the vehicles would c
 
 ![Phase2(3) Data](images/Density_v2_70.png)
 
-**Figure 16: Phase 2(3) Model**
+**Figure 18: Phase 2(3) Model**
 
 The traffic map shows that increase utilization of the bypass created additional traffic between all intersections except between 3-4, 5-6, 9-10, 11-12 and 13-14.  This was an improvement from Phase 2(2) as not as many cars decided to stay on the A10 and instead use the bypass.  However once they moved 1-2 intersections pass the bypass traffic began to slow greatly.  This caused high traffic at many of the following intersections.  Additionally, there were traffic jams created at intersections 2 and 13, which alleviated intersection 10 from Phase 1, but not intersection 13.  .     
 
 ![Phase 2(3) Data](images/Traffic_Distr_v2_70.png)
 
-**Figure 17: Phase 2(3) Data**
+**Figure 19: Phase 2(3) Data**
 
 |         |            |   |   |   | | | |
 | ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
