@@ -123,10 +123,16 @@ With the model of the A10 developed we needed to implement behaivors into the ag
 
 Additionally, we needed to develop accurate traffic flow that would represent the A10 during morning and afternoon traffic.  To do this we utilzed our real world data represetned in Figure 7.  This data was then assigned to the requisite on ramp and divided by two, half the number being assigned to the two on ramps in an area.  Because this model was built to 1/10 scale we then took those numbers and multiplied them by .1, which gave us our traffic source numbers for each of the on ramps.  
 
-With the model completed we ran the first phase experiement, below is an image of the results.
+With the model completed we add a distribution map that allowed us to track how long each agent was on the A10 and added a heat map that depicted in green, yellow, orange, and red where the hotspots were developing.  Below is an image of model after running and the results.
 
-!![PHASE 1](
+![PHASE 1](Denisty_v1.png)
+**Figure 8: Density Map for No Bypass**
 
+We could see that there were two primarly traffic flow issues from Phase 1.  Hotspots were occuring at intesection 10 and 13, while the rest of the A10 ran smoothly.  These areas of the map are where they A10 shrinks from three lanes to two lanes, or shortly there after in the case of intersection 10.  Each run of the simulation gave us the same results where traffic always seemed to back up at these on and off ramps.  Below is an image of these traffic jams.
+
+![Intersection 10]()
+
+![Intersection 13]()
 e had then set our parameters as "bp prob", the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. For the three experiments that we have conducted, we had set the probabilities to 0.3, 0.5, and 0.8. Given the size of our model, we had set our ratio as 1:10 to get the best look of our model.  
 
 An Exponetial distrubtion was used to see what effect it had on arrival rate on the cars in this model. The purpose of using the Exponential distribution is for its ability to represent the time between random occurrences, such as the time between arrivals at a specific location in a queuing model, in our experiment, eliminating traffic on the Autobarn 10 in Germany. It has also been used to represent the services times of a specific operation. Further, it serves as an explicit manner in which the time dependence on noise may be treated. One issue we have came across was that we cannot apply an exponential distribution. For each on and off ramp, we have set the probabilities so that each car has the probability of using the bypass to observe the possible ways of eliminating traffic; setting a probablility could prove useful to implement a tax to use the AutoBhan 10 or not. 
