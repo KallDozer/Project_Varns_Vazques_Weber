@@ -119,9 +119,9 @@ This experiment was conducted in two phases, the first phase required us to deve
 
 **PHASE 1**
 
-With the model of the A10 developed we needed to implement behaivors into the agents (vehicles) that would allow them to decide whether they wanted to stay on the road, or take the next off-ramp.  To do this we developed stay probabilities in each of the decision nodes, this was set to 80% meaning the cars had a 20% chance to get off the A10 at each off ramp.  We did this to ensure cars would only stay on the A10 for approximately 4-5 off ramaps, an accurate behavior we gathered from our real world data, while some would stay on the A10 for no more than 8 off ramps.  
+With the model of the A10 developed we needed to implement behaivors into the agents (vehicles) that would allow them to decide whether they wanted to stay on the road, or take the next off-ramp.  To do this we developed stay probabilities in each of the decision nodes, this was set to 80% meaning the cars had a 20% chance to get off the A10 at each off ramp.  We did this to ensure cars would only stay on the A10 for approximately 4-5 off ramaps, an accurate behavior we gathered from our real world data, while some would stay on the A10 for no more than 8 off ramps.  It's important to note that this probability did not change for the remainder of the experiment.
 
-Additionally, we needed to develop accurate traffic flow that would represent the A10 during morning and afternoon traffic.  To do this we utilzed our real world data represetned in Figure 7.  This data was then assigned to the requisite on ramp and divided by two, half the number being assigned to the two on ramps in an area.  Because this model was built to 1/10 scale we then took those numbers and multiplied them by .1, which gave us our traffic source numbers for each of the on ramps.  
+Additionally, we needed to develop accurate traffic flow that would represent the A10 during morning and afternoon traffic.  To do this we utilzed our real world data represetned in Figure 7.  This data was then assigned to the requisite on ramp and divided by two, half the number being assigned to the two on ramps in an area.  Because this model was built to 1/10 scale we then took those numbers and multiplied them by .1, which gave us our traffic source numbers for each of the on ramps.  These vaules remained the same for all experiments.  
 
 With the model completed we add a distribution map that allowed us to track how long each agent was on the A10.  The purpose of this plot was to gather how long each agent stay on the A10 and to allow us to determine if the solution we developed actually helped increase or decrease overall traffic times.  The last thing the researchers did to the model was add a heat map that depicted in green, yellow, orange, and red where hotspots were developing.  Below is an image of model after running and the results.
 
@@ -148,14 +148,43 @@ Data collected from the distribution plot shows how long each of the entities st
 |Experiment|Count|Mean|Min|Max|Deviation|Mean Confidence|Sum|
 |**Phase 1**|11,251|8 Min 38 Sec|6.579E-4|53 Min 17 Sec|7 Min 12 Sec|9.456E-5|63.265 Days|
 
-**Table 2: Phase 1 Data**
+**Table 1: Phase 1 Data**
 
 Phase 1 results show that on average vehicles stayed on the A10 for a total of 8 minutes and 38 seconds, with a min so small it's hard to calcualte in minutes and a max of 53 minutes and 17 seconds.  It is far to assume that vehciles who had the highest average time in the system were stuck between intersections 10 and 13 of the model.  In an attempt to fix this issue and determine if we could get the A10 to have minimum to no traffic hotspots we decided to develop a bypass that ran from intersection 10 to intersection 13.
 
 **PHASE 2**
 
+Once we determined where we were going to build our bypass we added additional code that allowed the cars to determine if they were going to take the bypass, or stay on the road.  To control this we set up three sub phases that set different probabilities that people would take the bypass or stay on the A10.  We did this to determine if the German Government could set up some sort of Quick Pass, like Florida has, to control the number of cars that can take the bypass at a given time.  This sort of control would allow them to manage traffic flow better, if a bypass was beneficial to the A10.
 
-e had then set our parameters as "bp prob", the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. For the three experiments that we have conducted, we had set the probabilities to 0.3, 0.5, and 0.8. Given the size of our model, we had set our ratio as 1:10 to get the best look of our model.  
+The bypass was built using a two lane system, meaning there were two lanes going each way.  The on and off ramps were controlled through a decision node that had an assigned bypass probobability.  This probability was set to 1 - bp prob and we then created a paramter that allowed us to set a value to determine this probability.  This value indicated the probability that agents would take this bypass.  We then ran three experiments changing this value to 0.3, 0.5, and 0.7 to determine if controlling the number of vehicles on the bypass could alleviate traffic on the A10.
+
+![Model with Bypass Code](images/Model_overview_v2.png)
+
+**Phase 2: Sub Phase 1**
+
+Phase 2(1) set the bypass probability to 0.3 meaning only 30% of the vehicles would choose to take the bypass.  The remaining 70% would continue on the A10 with bevaviors established in Phase 1.  Below is an image of the simulation once the run was completed and an image of the data.  
+
+![Sub Phase 1 Model](images/Density_v2_30.png)
+**Figure 12: Phase 2(1) Model**
+
+The traffic map shows that minimal utilization of the bypass actually freed up the traffic jam from intersection 13 and allowed traffic to move at a slower pace, but not become conjested where vehicles would barely move.  This did create increased traffic in intersection 2, 3, 4, 5, 7, 8, 9, 10, 11 and 14, however these were not complete traffic jams, but rather slower moving traffic.  It's important to note that no behaviors, i.e. speed limite, of the agents was changed for Phase 2, so the model and agents behaved the same.  The bypass seemed to allow the traffic to move more freely, but at a decreased speed.  
+
+![Phase 2(1) Data](images/Traffic_Distr_v2_30.png)
+**Figure 13: Phase 2(1) Distribution Plot**
+
+|         |            |   |   |   | | | |
+| ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
+|Experiment|Count|Mean|Min|Max|Deviation|Mean Confidence|Sum|
+|**Phase 2(1)**|7,995|8 Min 38 Sec|6.677E-4|59 Min 2 Sec|8 Min 38 Sec|1.377E-4|49.238 Days|
+**Table 2: Phase 2(1) Data**
+
+Phase 2(1) results show that on average vehicles stayed on the A10 for a total of 8 minutes and 38 seconds which was the exact same as Phase 1.  Again, like Phase 1 the min was so small it's hard to calcualte in minutes, however the max is where the two experiments begin to deviate.  The max of phase 2(1) was 59 minutes and 2 seconds, which was almost a six minute increase.  This can be seen in the increased mean confidence as well, meaning the cars generally stayed longer on the A10.  This is most likely due to the slower traffic times depicted by the traffic map.  It is fair to say that this simulation created the best model that behaved like real traffic, but this issue will be addressed in the Discussion section of this paper.
+
+**Phase 2: Sub Phase 2**
+
+Sub phase 1 set the bypass probability to 0.5 meaning 50% of the vehicles would choose to take the bypass.  The remaining 50% would continue on the A10 with bevaviors established in Phase 1.
+
+Sub phase 1 set the bypass probability to 0.7 meaning 70% of the vehicles would choose to take the bypass.  The remaining 30% would continue on the A10 with bevaviors established in Phase 1.
 
 An Exponetial distrubtion was used to see what effect it had on arrival rate on the cars in this model. The purpose of using the Exponential distribution is for its ability to represent the time between random occurrences, such as the time between arrivals at a specific location in a queuing model, in our experiment, eliminating traffic on the Autobarn 10 in Germany. It has also been used to represent the services times of a specific operation. Further, it serves as an explicit manner in which the time dependence on noise may be treated. One issue we have came across was that we cannot apply an exponential distribution. For each on and off ramp, we have set the probabilities so that each car has the probability of using the bypass to observe the possible ways of eliminating traffic; setting a probablility could prove useful to implement a tax to use the AutoBhan 10 or not. 
 
