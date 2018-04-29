@@ -150,7 +150,11 @@ Data collected from the distribution plot shows how long each of the entities st
 
 **Table 2: Phase 1 Data**
 
-Phase 1 results show that 
+Phase 1 results show that on average vehicles stayed on the A10 for a total of 8 minutes and 38 seconds, with a min so small it's hard to calcualte in minutes and a max of 53 minutes and 17 seconds.  It is far to assume that vehciles who had the highest average time in the system were stuck between intersections 10 and 13 of the model.  In an attempt to fix this issue and determine if we could get the A10 to have minimum to no traffic hotspots we decided to develop a bypass that ran from intersection 10 to intersection 13.
+
+**PHASE 2**
+
+
 e had then set our parameters as "bp prob", the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. For the three experiments that we have conducted, we had set the probabilities to 0.3, 0.5, and 0.8. Given the size of our model, we had set our ratio as 1:10 to get the best look of our model.  
 
 An Exponetial distrubtion was used to see what effect it had on arrival rate on the cars in this model. The purpose of using the Exponential distribution is for its ability to represent the time between random occurrences, such as the time between arrivals at a specific location in a queuing model, in our experiment, eliminating traffic on the Autobarn 10 in Germany. It has also been used to represent the services times of a specific operation. Further, it serves as an explicit manner in which the time dependence on noise may be treated. One issue we have came across was that we cannot apply an exponential distribution. For each on and off ramp, we have set the probabilities so that each car has the probability of using the bypass to observe the possible ways of eliminating traffic; setting a probablility could prove useful to implement a tax to use the AutoBhan 10 or not. 
