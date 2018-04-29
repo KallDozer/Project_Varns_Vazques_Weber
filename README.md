@@ -30,7 +30,7 @@ Traffic congestion on the Autobahn is amongst the worst in the world.  This cong
 
 ## Proposed Solution:
 
-To complete this experiment the researchers will conduct a study to identify a strategy to reduce traffic congestion that could be implemented in different cities across the world.  For the purpose of this experiment we will use the Autobahn 10 in Germany.  The researchers reviewed literature related to congestion and typical driving patterns of humans, examined existing data for traffic flow on and off of the Autobahn, and will analyze historical hotspots for traffic congestion.  With this data we will create a model of the Autobahn, of vehicles (cars and trucks), and of drivers.  Once created we will run this model to identify key hotspots on the Autobahn and develop simple bypasses for alleviating this congestion.
+To complete this experiment the researchers will conduct a study to identify a strategy to reduce traffic congestion that could be implemented in different cities across the world.  For the purpose of this experiment we will use the Autobahn 10 in Germany.  The researchers reviewed literature related to congestion and typical driving patterns of humans, examined existing data for traffic flow on and off of the Autobahn, and will analyze historical hotspots for traffic congestion.  With this data we will create a model of the Autobahn, of vehicles (cars), and of drivers.  Once created we will run this model to identify key hotspots on the Autobahn and develop simple bypasses for alleviating this congestion.
 
 ## Contributions:
 + Our research should present a resilient approach/guidance for city-planner to fight the common traffic problems of congestion
@@ -38,11 +38,10 @@ To complete this experiment the researchers will conduct a study to identify a s
 + Our code and models will be open sourced to be used by any individual or organization.
 
 ## The Model
-Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car” and “Truck”.  The vehicle component will have the ability for freedom of movement, meaning they will have the ability to enter and exit freely to get to their destination; the "Vehicle" will operate simliarly to typical, human driving behaviors in that the "Vehicle" driving behavior will be more predictiable than humans.  This will be part of their programing and is the reason we left out “People” from the experiment.  
+Our created model is a good abstraction of the given problem, due to the fact that we tried to focus on the core elements “Road” and “Vehicle”. The element “Road” is consisting out of “Lanes” and several “ON/Off-sections”. Whereas the element “Vehicle”, that will interact with the previous mentioned parts, is consisting out of the elements “Car”.  The vehicle component will have the ability for freedom of movement, meaning they will have the ability to enter and exit freely to get to their destination; the "Vehicle" will operate simliarly to typical, human driving behaviors in that the "Vehicle" driving behavior will be more predictiable than humans.  This will be part of their programing and is the reason we left out “People” from the experiment.  
 
 ![Structural_Diagram](/images/Structural_Diagram.PNG)
 <p align="center">Figure 2: Object Diagram</p>
-
 
 ![Behavioral_Diagram](/images/Behavioral_Diagram.PNG) 
 <p align="center">Figure 3: Behavior Diagram</p>
@@ -159,19 +158,20 @@ Once we determined where we were going to build our bypass we added additional c
 The bypass was built using a two lane system, meaning there were two lanes going each way.  The on and off ramps were controlled through a decision node that had an assigned bypass probobability.  This probability was set to 1 - bp prob and we then created a paramter that allowed us to set a value to determine this probability.  This value indicated the probability that agents would take this bypass.  We then ran three experiments changing this value to 0.3, 0.5, and 0.7 to determine if controlling the number of vehicles on the bypass could alleviate traffic on the A10.
 
 ![Model with Bypass Code](images/Model_overview_v2.png)
+**Figure 12: Model with Bypass**
 
 **Phase 2: Sub Phase 1**
 
 Phase 2(1) set the bypass probability to 0.3 meaning only 30% of the vehicles would choose to take the bypass.  The remaining 70% would continue on the A10 with bevaviors established in Phase 1.  Below is an image of the simulation once the run was completed and an image of the data.  
 
 ![Sub Phase 1 Model](images/Density_v2_30.png)
-**Figure 12: Phase 2(1) Model**
+**Figure 13: Phase 2(1) Model**
 
 The traffic map shows that minimal utilization of the bypass actually freed up the traffic jam from intersection 13 and allowed traffic to move at a slower pace, but not become conjested where vehicles would barely move.  This did create increased traffic in intersection 2, 3, 4, 5, 7, 8, 9, 10, 11 and 14, however these were not complete traffic jams, but rather slower moving traffic.  It's important to note that no behaviors, i.e. speed limite, of the agents was changed for Phase 2, so the model and agents behaved the same.  The bypass seemed to allow the traffic to move more freely, but at a decreased speed.  
 
 ![Phase 2(1) Data](images/Traffic_Distr_v2_30.png)
 
-Figure 13: Phase 2(1) Distribution Plot**
+**Figure 14: Phase 2(1) Distribution Plot**
 
 |         |            |   |   |   | | | |
 | ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
@@ -184,21 +184,55 @@ Phase 2(1) results show that on average vehicles stayed on the A10 for a total o
 
 **Phase 2: Sub Phase 2**
 
-Sub phase 1 set the bypass probability to 0.5 meaning 50% of the vehicles would choose to take the bypass.  The remaining 50% would continue on the A10 with bevaviors established in Phase 1.
+Phase 2(2) set the bypass probability to 0.5 meaning 50% of the vehicles would choose to take the bypass.  The remaining 50% would continue on the A10 with bevaviors established in Phase 1.  Below is an image of the simulation once the run was completed and an image of the data.  
 
-Sub phase 1 set the bypass probability to 0.7 meaning 70% of the vehicles would choose to take the bypass.  The remaining 30% would continue on the A10 with bevaviors established in Phase 1.
+![Phase2(2) Data](images/Density_v2.png)
 
-An Exponetial distrubtion was used to see what effect it had on arrival rate on the cars in this model. The purpose of using the Exponential distribution is for its ability to represent the time between random occurrences, such as the time between arrivals at a specific location in a queuing model, in our experiment, eliminating traffic on the Autobarn 10 in Germany. It has also been used to represent the services times of a specific operation. Further, it serves as an explicit manner in which the time dependence on noise may be treated. One issue we have came across was that we cannot apply an exponential distribution. For each on and off ramp, we have set the probabilities so that each car has the probability of using the bypass to observe the possible ways of eliminating traffic; setting a probablility could prove useful to implement a tax to use the AutoBhan 10 or not. 
+**Figure 15: Phase 2(2) Model**
 
-While we had our simulation run, we had bar graphs running adjacient to collect statistics on the mean time that our cars had stayed in the simualtion. During those runs, we found that all cars have stayed in the simulation for a M = 8.64 minutes; these results were consistent for all runs. We did, however, find difference in the number of cars that were in our simulation. During the inital run, we have counted a total number of 11,251 cars on the Autobahn 10, however, the desity map shown below indicated heavy traffic - this had also included the additional of the bypass. It was then during the second run we had found less traffic build up after resetting the probability of taking thr bypass to 0.3 and that the number of cars appearig on the Autobahn 10 reduced to 7,995 cars. During our thrid run we found that by resetting the probablility of taking the bypass to 0.7 had further educed the number of cars on the Autobahn 10, but this had then also indicated heavy traffic, as shown in our density map. 
+The traffic map shows that increase utilization of the bypass created additional traffic between all intersections except between 3-4, 5-6, 9-10, and 11-12.  This did create traffic jams at intersections 2, 6, 10, and 13.  These areas had traffic that wouldn't move for long periods of time because of the number of models that arrived at this location at a given moment.     
 
-Before setting the probablility of exiting as 0.3, our density map demostrated heavy traffice occuring throughtout the Autobahn 10, with the most congested exits being arounf Exit 10 and Exit 13; this is demostarted in the desity map below (Figure --). By then adding in the bypasses to the Auto Bahn 10, we then saw the roads becoming less congested, but this did not change for exits 10 and 13. These exits seem to become backed up no matter what was done to fix this. We assume that these congestion points occur due to drivers utalize these exits the most, which then led to tarffic becoming congested at these points.
+![Phase 2(2) Data](images/Traffic_Distr_v2.png)
 
-We did not discover any difference in effect size after multiple runs of our simulation. We found that no matter the number of times we run the simulation, we would see similar results. This causes an issue with validity of the model itself, which then leads us to believe there are issues with our simulation that we unable to determine. We have also saw issues in the behaviors of the cars themselves. Collisions were occuring in areas that were causing the cars to be backed up, eventually causing the cars on the Autobahn 10 to stop moving. The cars that tend to be affected by these collision issues are those around exit 10 and 13. 
+**Figure 16: Phase 2(2) Data**
 
-(insert image here) 
+|         |            |   |   |   | | | |
+| ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
+|Experiment|Count|Mean|Min|Max|Deviation|Mean Confidence|Sum|
+|**Phase 2(2)**|7,218|8 Min 38 Sec|6.32E-4|57 Min 36 Sec|8 Min 38 Sec|1.443E-4|43.828 Days|
 
-Figures 1 & 2: The above images depicts traffic on exits 10 and 13. All intersections were built identical to one another, however, we have ran into issues which traffic would build up on these exits.
+**Table 3: Phase 2(2) Data**
+
+Phase 2(2) results show that on average vehicles stayed on the A10 for a total of 8 minutes and 38 seconds which was the exact same as Phase 1 and Phase 2(1).  Again, like Phase 1 and Phase 2(1) the min was so small it's hard to calcualte in minutes, however the max is where the three experiments deviate.  The max of phase 2(2) was 57 minutes and 36 seconds, which was almost a four minute increase from Phase 1, but a 2 minute decrease from phase 2(1).  This can be seen in the increased mean confidence as well from Phase 1, meaning the cars generally stayed longer on the A10.  This is most likely due to the slower traffic times depicted by the traffic map, which unlike phase 2(1) was increased at many more intersections.  This increase in traffic and traffic jams, resulting in slower traffic was less efficient than Phase 1, but slightly more efficient than phase 2(1).  Unlike phase 2(1) however, the model behavior wasn't the most efficient as traffic jams created cars that bunched up far too much, this issue will be further explained in the disucssion.
+
+**Phase 2: Sub Phase 3**
+
+Phase 2(3) set the bypass probability to 0.7 meaning 70% of the vehicles would choose to take the bypass.  The remaining 30% would continue on the A10 with bevaviors established in Phase 1.  Below is an image of the simulation once the run was completed and an image of the data.  
+
+![Phase2(3) Data](images/Density_v2_70.png)
+
+**Figure 16: Phase 2(3) Model**
+
+The traffic map shows that increase utilization of the bypass created additional traffic between all intersections except between 3-4, 5-6, 9-10, 11-12 and 13-14.  This was an improvement from Phase 2(2) as not as many cars decided to stay on the A10 and instead use the bypass.  However once they moved 1-2 intersections pass the bypass traffic began to slow greatly.  This caused high traffic at many of the following intersections.  Additionally, there were traffic jams created at intersections 2 and 13, which alleviated intersection 10 from Phase 1, but not intersection 13.  .     
+
+![Phase 2(3) Data](images/Traffic_Distr_v2_70.png)
+
+**Figure 17: Phase 2(3) Data**
+
+|         |            |   |   |   | | | |
+| ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
+|Experiment|Count|Mean|Min|Max|Deviation|Mean Confidence|Sum|
+|**Phase 2(3)**|6,664|8 Min 38 Sec|6.683E-4|57 Min 36 Sec|8 Min 38 Sec|1.536E-4|39.494 Days|
+
+**Table 3: Phase 2(3) Data**
+
+Phase 2(3) results show that on average vehicles stayed on the A10 for a total of 8 minutes and 38 seconds which was the exact same as Phase 1 and Phase 2(1), and Phase 2(2).  Again, like Phase 1, Phase 2(1) and Phase 2(2) the min was so small it's hard to calcualte in minutes, however the max is where the three experiments deviate.  The max of phase 2(3) was 57 minutes and 36 seconds, which was almost a four minute increase from Phase 1, a 2 minute decrease from phase 2(1), and the same as Phase 2(2).  This can be seen in the increased mean confidence as well from Phase 1, meaning the cars generally stayed longer on the A10.  This is most likely due to the slower traffic times depicted by the traffic map, which unlike phase 2(1) and phase 2(2) was increased at many more intersections.  This increase in traffic and traffic jams, resulting in slower traffic was less efficient than Phase 1, slightly more efficient than phase 2(1) and very similar to phase 2(2) .  Unlike phase 2(1) however, the model behavior wasn't the most efficient as traffic jams created cars that bunched up far too much, this issue will be further explained in the disucssion.
+
+**ANALYSIS**
+
+Analysis of Phase 1 and Phase 2 runs shows that creating a bypass did not alleviate the traffic issue.  Phase 1 of the experiment had better results across the board, while generating more agents for the model to gather data on.  The primary point to analyze for the researchers was Max Time spent on the A10.  We analyzed all other data, but overall wanted to know if we could decrease traffic through a simple addition of another roadway.  By creating a bypass we simiply seemed to push traffic further down the A10 and slow the rest of it down.  Because of the 4-6 minute increase in max time during all runs of phase 2 we can safely say that our hypothesis was proved incorrect.
+
+It is important to note why the Phase 2 runs had fewer agents.  This was because of the increased traffic generated at additional roadways and intersections on our model.  If the roads were too busy the model would continue to produce agents until the on ramp was full, once it was full it would stop producing agents until a spot was freed up by a car entering the A10.  Because our bypass created additional and slower traffic at intersections this meant fewer agents to collect data on.  This will be discussed further in the discussion portion of the paper as to limiting factors of AnyLogic.
 
 ## Discussion
 
@@ -210,9 +244,7 @@ Due to complications from the build of our simulation, we have came to the possi
 
 The AnyLogic Learner Edition only allows users to run models for only an hour. This limits us to use real world data to accurately simulate problems that run for a minmiumn of 24 hours. We also assume that the AnyLogic Learner Edition lacks processing power in that it is unable to handle the amount of variables, paramters, agents, etc. that we have included within our model - is it not built for such high, processing power models that contain high values. It has forced us to manipulate the code to change the model's behavior. This has disabled us to properly represent the behaviors of cars in an applied setting; we were not able to account for ecological validity. This then led us to believe that the behaviors cars are not representative of what we would see on the Autobahn 10 or any other highway.
 
-
-
-## Future Work
+##Future Work
 
 For future implementation, we would go about with running our model in an edition of AnyLogic that is not the student package. As stated in the previous section, the student edition has limited us fro being able to run our model for the time necessary to have accruate results; the program only lets us run our simulation for an hour. We would want to utilize the features in the other AnyLogic editions in hopes that we can run our model properly and get results that would ptoperly represent what we would see in an applied setting. Further, we believe that we will not be as limited in what we can do with our model and run for a full day versus the one hour maxmium from AnyLogic's Learner Edition. 
 
