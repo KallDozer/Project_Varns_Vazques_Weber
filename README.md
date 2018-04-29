@@ -115,7 +115,19 @@ The A10 consists of three lanes of traffic heading in both directions.  There is
 
 ## Results
 
-For this expeirment, we have set up state probabilities to 30%; this is the probability that the agents in this model would stay on the road.  We had then set our parameters as "bp prob", the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. For the three experiments that we have conducted, we had set the probabilities to 0.3, 0.5, and 0.8. Given the size of our model, we had set our ratio as 1:10 to get the best look of our model.  
+This experiment was conducted in two phases, the first phase required us to develop a model to represent the behaviors of the A10.  The first phase was complete once we ran the simulation and collected data on where hotspots developed on the A10.  The second phase was to develop a bypass and see if this changed the behavior of the model and relieved these hotspots.  
+
+**PHASE 1**
+
+With the model of the A10 developed we needed to implement behaivors into the agents (vehicles) that would allow them to decide whether they wanted to stay on the road, or take the next off-ramp.  To do this we developed stay probabilities in each of the decision nodes, this was set to 80% meaning the cars had a 20% chance to get off the A10 at each off ramp.  We did this to ensure cars would only stay on the A10 for approximately 4-5 off ramaps, an accurate behavior we gathered from our real world data, while some would stay on the A10 for no more than 8 off ramps.  
+
+Additionally, we needed to develop accurate traffic flow that would represent the A10 during morning and afternoon traffic.  To do this we utilzed our real world data represetned in Figure 7.  This data was then assigned to the requisite on ramp and divided by two, half the number being assigned to the two on ramps in an area.  Because this model was built to 1/10 scale we then took those numbers and multiplied them by .1, which gave us our traffic source numbers for each of the on ramps.  
+
+With the model completed we ran the first phase experiement, below is an image of the results.
+
+!![PHASE 1](
+
+e had then set our parameters as "bp prob", the probability that the agents would stay on the road or take the bypass. These paramters were then implmented into the decison nodes that determined if the car would stay on the road or take the bypass. We had set this value as an input of 1 - bp prob. This value indicated the probability that they will take this bypass. We had then developed the paramter "stay prob" for the regular on and off ramps, which was set to 0.8 for all experiments. For the three experiments that we have conducted, we had set the probabilities to 0.3, 0.5, and 0.8. Given the size of our model, we had set our ratio as 1:10 to get the best look of our model.  
 
 An Exponetial distrubtion was used to see what effect it had on arrival rate on the cars in this model. The purpose of using the Exponential distribution is for its ability to represent the time between random occurrences, such as the time between arrivals at a specific location in a queuing model, in our experiment, eliminating traffic on the Autobarn 10 in Germany. It has also been used to represent the services times of a specific operation. Further, it serves as an explicit manner in which the time dependence on noise may be treated. One issue we have came across was that we cannot apply an exponential distribution. For each on and off ramp, we have set the probabilities so that each car has the probability of using the bypass to observe the possible ways of eliminating traffic; setting a probablility could prove useful to implement a tax to use the AutoBhan 10 or not. 
 
