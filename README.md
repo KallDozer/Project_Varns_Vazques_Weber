@@ -170,12 +170,14 @@ Phase 2(1) set the bypass probability to 0.3 meaning only 30% of the vehicles wo
 The traffic map shows that minimal utilization of the bypass actually freed up the traffic jam from intersection 13 and allowed traffic to move at a slower pace, but not become conjested where vehicles would barely move.  This did create increased traffic in intersection 2, 3, 4, 5, 7, 8, 9, 10, 11 and 14, however these were not complete traffic jams, but rather slower moving traffic.  It's important to note that no behaviors, i.e. speed limite, of the agents was changed for Phase 2, so the model and agents behaved the same.  The bypass seemed to allow the traffic to move more freely, but at a decreased speed.  
 
 ![Phase 2(1) Data](images/Traffic_Distr_v2_30.png)
-**Figure 13: Phase 2(1) Distribution Plot**
+
+Figure 13: Phase 2(1) Distribution Plot**
 
 |         |            |   |   |   | | | |
 | ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:| -----:|
 |Experiment|Count|Mean|Min|Max|Deviation|Mean Confidence|Sum|
 |**Phase 2(1)**|7,995|8 Min 38 Sec|6.677E-4|59 Min 2 Sec|8 Min 38 Sec|1.377E-4|49.238 Days|
+
 **Table 2: Phase 2(1) Data**
 
 Phase 2(1) results show that on average vehicles stayed on the A10 for a total of 8 minutes and 38 seconds which was the exact same as Phase 1.  Again, like Phase 1 the min was so small it's hard to calcualte in minutes, however the max is where the two experiments begin to deviate.  The max of phase 2(1) was 59 minutes and 2 seconds, which was almost a six minute increase.  This can be seen in the increased mean confidence as well, meaning the cars generally stayed longer on the A10.  This is most likely due to the slower traffic times depicted by the traffic map.  It is fair to say that this simulation created the best model that behaved like real traffic, but this issue will be addressed in the Discussion section of this paper.
