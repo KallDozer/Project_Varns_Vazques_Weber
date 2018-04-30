@@ -263,11 +263,11 @@ Overall, we learned a lot about building up a traffic-network by using Anylogic 
 
 For future implementation, we would first of all like to run our model in the Professional Edition of AnyLogic, because as we stated in the previous section, the Personal Learning Edition has a lot of limitations (e.g. code-size < 200 blocks, simulation-time < 1 hour), that forced us to simplify and assume certain characteristics of the system to be able to run our model to have relevant results. We would want to utilize the features in the AnyLogic Professional Edition, in hopes that we can run our model more realistic and to be able to observe the resulting impact of these and other possible modifications. Further, we believe that we will not be as limited in what we can do with our model and also run it for a full day versus the one hour maximum from AnyLogic's Personal Learning Edition. 
 
-Having additional 6 months, we would also try to implement our scenario in other available simulation- or programming-languages and trying to identify the differences in their results. One of this possible simulation-language is VISSIM, that is specialized in the field of traffic-simulation (In contrast to Anylogic, which is a very good all-round simulation tool that is able to solve smaller problems from different areas satisfactorily).
+Having additional 6 months, we would also try to implement our scenario in other available simulation- or programming-languages and trying to identify the differences in their results. One of this possible simulation-language is VISSIM that is specialized in the field of traffic-simulation (In contrast to Anylogic, which is a very good all-round simulation tool that is able to solve smaller problems from different areas satisfactorily).
 
 We would also be interested in testing a gaming engine to help visualize and simulate our model that was originally built in this experiment. We would lean towards using Unreal Engine to run/explore such a realization of our traffic-system. 
 
-Overall, future work should focus on finding a system that can handle the processing needs of a complex, dynamic traffic-model and look into differnet methods of importing real world data into this system to then replicate the environments that were are looking to solve these problems for.
+Overall, future work should focus on finding a system that can handle the processing needs of a complex, dynamic traffic-model and look into different methods of importing real world data into this system to then replicate the environments that were are looking to solve these problems for.
 
 
 ## References
