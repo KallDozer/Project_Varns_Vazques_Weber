@@ -258,8 +258,7 @@ All these factors forced us to simplify the code or assuming specific behavior t
 
 But to sum up, the most interesting part of this project/problem was the research, on how we could model and simulate a highway-traffic that has neither a beginning nor an end. And we think, that if we would be able to do it again we wouldn't choose a highway with 14 on-/off-areas (by using a fictional scenario of a smaller version of the A10) to be able to implement additional functions and to be able to observe their impact on our model and the behavior of the agents.
 
-
-##Future Work
+## Future Work
 
 For future implementation, we would go about with running our model in an edition of AnyLogic that is not the student package. As stated in the previous section, the student edition has limited us for being able to run our model for the time necessary to have accurate results; the program only lets us run our simulation for an hour. We would want to utilize the features in the AnyLogic Professional Edition, in hopes that we can run our model more realistic and to be able to observe the resulting impact of these modifications. Further, we believe that we will not be as limited in what we can do with our model and run for a full day versus the one hour maximum from AnyLogic's Personal Learning Edition. 
 
